@@ -3,6 +3,7 @@
 
   <head>
     <title>bru.</title>
+
     <meta charset="utf-8" />
     <meta name="author" content="Richard Aljaste" />
     <meta name="description" content="Lihtsuses peitub võlu." />
@@ -13,6 +14,8 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/cdj4qgy.css">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -25,8 +28,15 @@
           </p>
         </a>
       </div>
-      <div id="title">
+      <img id="wth" class="ttl fade" src="img/bru.jpg"/>
+      <noscript class="fade">Some features on this beauty require javascript in order to run.</noscript>
+      <div class="title fade">
         <strong>Welcome, bru.</strong>
       </div>
+      <script>
+   		$("a#wth").hover(function() {
+    		$("img#wth").toggleClass("ttl2");
+    	});
+</script>
   </body>
 </html>
