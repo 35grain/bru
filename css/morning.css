@@ -17,6 +17,14 @@ body {
   /* Opera */
 }
 
+::selection {
+    background: #854442;
+}
+
+::-moz-selection {
+    background: #854442;
+}
+
 /*--------------------
 Welcome title
 --------------------*/
