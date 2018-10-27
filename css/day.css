@@ -1,16 +1,19 @@
 html,
 body {
-    cursor: default;
-    -webkit-user-select: text;
-    -webkit-touch-callout: text;
-    font-family: Lato;
-    font-size: 14px;
-    font-size: 0.73vw;
-    color: #222;
-    animation: fadein 1.5s;
-      -moz-animation: fadein 1.5s; /* Firefox */
-      -webkit-animation: fadein 1.5s; /* Safari and Chrome */
-      -o-animation: fadein 1.5s; /* Opera */
+  cursor: default;
+  -webkit-user-select: text;
+  -webkit-touch-callout: text;
+  font-family: Lato;
+  font-size: 14px;
+  font-size: 0.73vw;
+  color: #222;
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  /* Firefox */
+  -webkit-animation: fadein 1.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1.5s;
+  /* Opera */
 }
 
 /*--------------------
@@ -79,11 +82,11 @@ img.ttl2 {
   opacity: 1;
 }
 
-.allmighty:hover ~ .title {
+.allmighty:hover~.title {
   opacity: 0;
 }
 
-.allmighty:hover ~ noscript {
+.allmighty:hover~noscript {
   opacity: 1;
 }
 
@@ -104,90 +107,117 @@ img.ttl2 {
 Magic fade
 --------------------*/
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .fade {
   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
 /*--------------------
 Responsiveness
 --------------------*/
 @media only screen and (max-width: 1400px) {
-    html,
-    body {
-      font-size: 12px;
-      font-size: 1vw;
-    }
-    .title {
-      font-size: 7vw;
-    }
+
+  html,
+  body {
+    font-size: 12px;
+    font-size: 1vw;
+  }
+
+  .title {
+    font-size: 7vw;
+  }
 }
+
 @media only screen and (max-width: 1000px) {
-    html,
-    body {
-      font-size: 1.5vw;
-    }
-    .title {
-      font-size: 7.5vw;
-    }
+
+  html,
+  body {
+    font-size: 1.5vw;
+  }
+
+  .title {
+    font-size: 7.5vw;
+  }
 }
+
 @media only screen and (max-width: 700px) {
-    html,
-    body {
-      font-size: 2vw;
-    }
-    .title {
-      font-size: 8vw;
-    }
+
+  html,
+  body {
+    font-size: 2vw;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
 }
+
 @media only screen and (max-width: 550px) {
-    html,
-    body {
-      font-size: 2.5vw;
-    }
-    .title {
-      font-size: 9vw;
-    }
+
+  html,
+  body {
+    font-size: 2.5vw;
+  }
+
+  .title {
+    font-size: 9vw;
+  }
 }
+
 @media only screen and (max-width: 400px) {
-    html,
-    body {
-      font-size: 3.5vw;
-    }
-    .title {
-      font-size: 10.5vw;
-    }
+
+  html,
+  body {
+    font-size: 3.5vw;
+  }
+
+  .title {
+    font-size: 10.5vw;
+  }
 }

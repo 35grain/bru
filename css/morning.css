@@ -1,0 +1,224 @@
+html,
+body {
+  cursor: default;
+  -webkit-user-select: text;
+  -webkit-touch-callout: text;
+  font-family: Lato;
+  font-size: 14px;
+  font-size: 0.73vw;
+  color: #be9b7b;
+  background-color: #fff4e6;
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  /* Firefox */
+  -webkit-animation: fadein 1.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1.5s;
+  /* Opera */
+}
+
+/*--------------------
+Welcome title
+--------------------*/
+.title {
+  font-family: adobe-garamond-pro;
+  font-size: 120px;
+  font-size: 6.25vw;
+  color: #854442;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  opacity: 1;
+}
+
+/*--------------------
+Nav aka footer
+--------------------*/
+.allmighty {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.allmighty a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.allmighty p {
+  margin: 0;
+}
+
+noscript {
+  position: absolute;
+  opacity: 0;
+  color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+img.ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 60%;
+  object-fit: cover;
+  opacity: 0;
+  z-index: -1;
+}
+
+img.ttl2 {
+  opacity: 1;
+}
+
+.allmighty:hover~.title {
+  opacity: 0;
+}
+
+.allmighty:hover~noscript {
+  opacity: 1;
+}
+
+.allmighty a#wth p span {
+  content: "BRU?";
+}
+
+.allmighty a:hover p span {
+  display: none;
+}
+
+.allmighty a#wth:hover p:after {
+  text-decoration: line-through;
+  content: 'LEARN MORE';
+}
+
+/*--------------------
+Magic fade
+--------------------*/
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/*--------------------
+Responsiveness
+--------------------*/
+@media only screen and (max-width: 1400px) {
+
+  html,
+  body {
+    font-size: 12px;
+    font-size: 1vw;
+  }
+
+  .title {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  html,
+  body {
+    font-size: 1.5vw;
+  }
+
+  .title {
+    font-size: 7.5vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  html,
+  body {
+    font-size: 2vw;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  html,
+  body {
+    font-size: 2.5vw;
+  }
+
+  .title {
+    font-size: 9vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  html,
+  body {
+    font-size: 3.5vw;
+  }
+
+  .title {
+    font-size: 10.5vw;
+  }
+}
