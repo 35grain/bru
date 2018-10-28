@@ -133,22 +133,24 @@ img.pg {
 img.profile {
   object-fit: cover;
   border-radius: 50%;
-  width: 60%;
+  width: 100%;
 }
 
 .column {
   float: left;
-  padding: 10px;
+  padding: 10px 2%;
   box-sizing: border-box;
+  font-size: 1vw;
 }
 
 .left {
-    width: 25%;
-    text-align: right;
+    width: 17%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .right {
-    width: 75%;
+    width: 83%;
     text-align: left;
 }
 
@@ -165,7 +167,7 @@ img.profile {
 
 .content-wrapper h1 {
   font-family: adobe-garamond-pro;
-  color: #aa6f73;
+  color: #e1483d;
   font-size: 2vw;
   margin: 0;
   padding: 0;
