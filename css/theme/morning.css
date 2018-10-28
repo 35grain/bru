@@ -13,6 +13,20 @@ body {
   background: rgba(133, 68, 66, 0.7);
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #854442;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #854454;
+}
+
 /*--------------------
 Welcome title
 --------------------*/
