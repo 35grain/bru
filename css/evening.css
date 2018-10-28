@@ -5,8 +5,8 @@ body {
   font-family: Lato;
   font-size: 14px;
   font-size: 0.73vw;
-  color: #66545e;
-  background-color: #a39193;
+  color: #c98276;
+  background-color: #eec1ad;
   margin: 0;
   animation: fadein 1.5s;
   -moz-animation: fadein 1.5s;
@@ -18,13 +18,13 @@ body {
 }
 
 ::selection {
-    background: #aa6f73;
-    background: rgba(170, 111, 115, 0.7);
+    background: #e35d6a;
+    background: rgba(227, 93, 106, 0.7);
 }
 
 ::-moz-selection {
-    background: #aa6f73;
-    background: rgba(170, 111, 115, 0.7);
+    background: #e35d6a;
+    background: rgba(227, 93, 106, 0.7);
 }
 
 /*--------------------
@@ -34,7 +34,7 @@ Welcome title
   font-family: adobe-garamond-pro;
   font-size: 120px;
   font-size: 6.25vw;
-  color: #aa6f73;
+  color: #e35d6a;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -167,7 +167,7 @@ img.profile {
 
 .content-wrapper h1 {
   font-family: adobe-garamond-pro;
-  color: #e1483d;
+  color: #e35d6a;
   font-size: 2vw;
   margin: 0;
   padding: 0;
