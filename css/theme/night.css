@@ -35,10 +35,21 @@ Welcome title
 }
 
 /*--------------------
+Nav aka footer
+--------------------*/
+img.ttl {
+  filter: invert(100%);
+}
+
+/*--------------------
 Content page
 --------------------*/
 .content-wrapper h1 {
   color: #7289da;
+}
+
+img.pg {
+  filter: invert(100%);
 }
 
 a.back::before {
