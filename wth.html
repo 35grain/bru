@@ -63,7 +63,31 @@
 </head>
 
 <body>
-  <p>Just so there's something here.</p>
+  <div class="content-wrapper">
+    <img id="wth" class="pg" src="img/bru.jpg" />
+    <div class="row">
+      <div class="column left">
+        <h1>Simply put,<br> I'm your friend.</h1>
+        <img class="profile" src="img/profile.jpg" alt="Richard Aljaste">
+      </div>
+      <div class="column right">
+        Test
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.allmighty a').click(function(event) {
+        event.preventDefault();
+        newLocation = $('.allmighty a').attr("href");
+        $('body').fadeOut(250, newpage);
+      });
+
+      function newpage() {
+        window.location = newLocation;
+      }
+    });
+  </script>
 </body>
 
 </html>
