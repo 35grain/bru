@@ -25,3 +25,19 @@ Content page
 .content-wrapper h1 {
   color: #e1483d;
 }
+
+a.back::before {
+		border-color: #222;
+	}
+
+a.back:after {
+		border-color: #222;
+	}
+
+a.back:hover::after {
+		border-color: #e1483d;
+	}
+
+a.back:hover::before {
+		border-color: #e1483d;
+	}

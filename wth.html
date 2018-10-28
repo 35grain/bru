@@ -81,11 +81,12 @@
       </div>
     </div>
   </div>
+  <a href="index.html" class="back"></a>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('.allmighty a').click(function(event) {
+      $('a').click(function(event) {
         event.preventDefault();
-        newLocation = $('.allmighty a').attr("href");
+        newLocation = $('a').attr("href");
         $('body').fadeOut(250, newpage);
       });
 
