@@ -93,11 +93,13 @@ img.ttl2 {
   opacity: 1;
 }
 
-.allmighty:hover~.title {
+.allmighty:hover~.title,
+.allmighty:focus~.title {
   opacity: 0;
 }
 
-.allmighty:hover~noscript {
+.allmighty:hover~noscript,
+.allmighty:focus~noscript {
   opacity: 1;
 }
 
@@ -105,11 +107,13 @@ img.ttl2 {
   content: "BRU?";
 }
 
-.allmighty a:hover p span {
+.allmighty a:hover p span,
+.allmighty a:focus p span {
   display: none;
 }
 
-.allmighty a#wth:hover p:after {
+.allmighty a#wth:hover p:after,
+.allmighty a#wth:focus p:after {
   text-decoration: line-through;
   content: 'LEARN MORE';
 }
