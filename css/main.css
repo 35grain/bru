@@ -5,7 +5,6 @@ body {
   font-family: Lato;
   font-size: 14px;
   font-size: 0.73vw;
-  color: #222;
   margin: 0;
   animation: fadein 1.5s;
   -moz-animation: fadein 1.5s;
@@ -16,24 +15,13 @@ body {
   /* Opera */
 }
 
-::selection {
-    background: #e1483d;
-    background: rgba(225, 72, 61, 0.7);
-}
-
-::-moz-selection {
-    background: #e1483d;
-    background: rgba(225, 72, 61, 0.7);
-}
-
 /*--------------------
 Welcome title
 --------------------*/
 .title {
+  font-family: adobe-garamond-pro;
   font-size: 120px;
   font-size: 6.25vw;
-  font-family: adobe-garamond-pro;
-  color: #e1483d;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,11 +80,14 @@ img.ttl2 {
   opacity: 1;
 }
 
-.allmighty:hover~.title {
+.allmighty:hover~.title,
+.allmighty:focus~.title {
   opacity: 0;
 }
 
-.allmighty:hover~noscript {
+.allmighty:hover~noscript,
+.allmighty:focus~noscript,
+.allmighty:active~noscript {
   opacity: 1;
 }
 
@@ -104,11 +95,15 @@ img.ttl2 {
   content: "BRU?";
 }
 
-.allmighty a:hover p span {
+.allmighty a:hover p span,
+.allmighty a:focus p span,
+.allmighty a:active p span {
   display: none;
 }
 
-.allmighty a#wth:hover p:after {
+.allmighty a#wth:hover p:after,
+.allmighty a#wth:focus p:after,
+.allmighty a#wth:active p:after {
   text-decoration: line-through;
   content: 'LEARN MORE';
 }
@@ -143,14 +138,14 @@ img.profile {
 }
 
 .left {
-    width: 17%;
-    text-align: center;
-    text-transform: uppercase;
+  width: 17%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .right {
-    width: 83%;
-    text-align: left;
+  width: 83%;
+  text-align: justify;
 }
 
 .row {
@@ -159,14 +154,13 @@ img.profile {
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .content-wrapper h1 {
   font-family: adobe-garamond-pro;
-  color: #e1483d;
   font-size: 2vw;
   margin: 0;
   padding: 0;
@@ -231,8 +225,6 @@ Magic fade
 Responsiveness
 --------------------*/
 @media only screen and (max-width: 1400px) {
-
-  html,
   body {
     font-size: 12px;
     font-size: 1vw;
@@ -241,11 +233,17 @@ Responsiveness
   .title {
     font-size: 7vw;
   }
+
+  .column {
+    font-size: 1.4vw;
+  }
+
+  .content-wrapper h1 {
+    font-size: 2.7vw;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-
-  html,
   body {
     font-size: 1.5vw;
   }
@@ -253,11 +251,17 @@ Responsiveness
   .title {
     font-size: 7.5vw;
   }
+
+  .column {
+    font-size: 1.8vw;
+  }
+
+  .content-wrapper h1 {
+    font-size: 3.2vw;
+  }
 }
 
-@media only screen and (max-width: 700px) {
-
-  html,
+@media only screen and (max-width: 720px) {
   body {
     font-size: 2vw;
   }
@@ -265,11 +269,31 @@ Responsiveness
   .title {
     font-size: 8vw;
   }
+
+  .column {
+    font-size: 2.2vw;
+    float: none;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  img.pg {
+    display: none;
+  }
+
+  img.profile {
+    width: 50%;
+  }
+
+  .content-wrapper h1 {
+    font-size: 3.7vw;
+  }
 }
 
 @media only screen and (max-width: 550px) {
-
-  html,
   body {
     font-size: 2.5vw;
   }
@@ -277,16 +301,34 @@ Responsiveness
   .title {
     font-size: 9vw;
   }
+
+  .column {
+    font-size: 3vw;
+  }
+
+  img.profile {
+    width: 60%;
+  }
+
+  .content-wrapper h1 {
+    font-size: 5vw;
+  }
 }
 
-@media only screen and (max-width: 400px) {
-
-  html,
+@media only screen and (max-width: 420px) {
   body {
     font-size: 3.5vw;
   }
 
   .title {
     font-size: 10.5vw;
+  }
+
+  .column {
+    font-size: 4vw;
+  }
+
+  .content-wrapper h1 {
+    font-size: 6vw;
   }
 }

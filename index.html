@@ -34,32 +34,33 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/cdj4qgy.css">
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel="stylesheet" type='text/css'>
 
   <script>
     <!--
     function getStylesheet() {
       var currentTime = new Date().getHours();
       if (0 <= currentTime && currentTime < 5) {
-        document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/night.css' type='text/css'>");
       }
       if (5 <= currentTime && currentTime < 11) {
-        document.write("<link rel='stylesheet' href='css/morning.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/morning.css' type='text/css'>");
       }
       if (11 <= currentTime && currentTime < 16) {
-        document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/day.css' type='text/css'>");
       }
       if (16 <= currentTime && currentTime < 22) {
-        document.write("<link rel='stylesheet' href='css/evening.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/evening.css' type='text/css'>");
       }
       if (22 <= currentTime && currentTime <= 24) {
-        document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/night.css' type='text/css'>");
       }
     }
 
     getStylesheet();
     -->
   </script><noscript>
-    <link href="css/day.css" rel="stylesheet"></noscript>
+    <link href="css/theme/day.css" rel="stylesheet" type='text/css'></noscript>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -96,10 +97,10 @@
       }
     });
 
-    window.onpageshow = function (event) {
-        if (event.persisted) {
-            window.location.reload();
-        }
+    window.onpageshow = function(event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
     };
   </script>
 </body>

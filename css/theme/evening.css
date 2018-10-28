@@ -1,0 +1,28 @@
+body {
+  color: #c98276;
+  background-color: #eec1ad;
+}
+
+::selection {
+  background: #e35d6a;
+  background: rgba(227, 93, 106, 0.7);
+}
+
+::-moz-selection {
+  background: #e35d6a;
+  background: rgba(227, 93, 106, 0.7);
+}
+
+/*--------------------
+Welcome title
+--------------------*/
+.title {
+  color: #e35d6a;
+}
+
+/*--------------------
+Content page
+--------------------*/
+.content-wrapper h1 {
+  color: #e35d6a;
+}

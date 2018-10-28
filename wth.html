@@ -34,31 +34,33 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/cdj4qgy.css">
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel="stylesheet" type='text/css'>
 
   <script>
     <!--
     function getStylesheet() {
       var currentTime = new Date().getHours();
       if (0 <= currentTime && currentTime < 5) {
-        document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/night.css' type='text/css'>");
       }
       if (5 <= currentTime && currentTime < 11) {
-        document.write("<link rel='stylesheet' href='css/morning.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/morning.css' type='text/css'>");
       }
       if (11 <= currentTime && currentTime < 16) {
-        document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/day.css' type='text/css'>");
       }
       if (16 <= currentTime && currentTime < 22) {
-        document.write("<link rel='stylesheet' href='css/evening.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/evening.css' type='text/css'>");
       }
       if (22 <= currentTime && currentTime <= 24) {
-        document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
+        document.write("<link rel='stylesheet' href='css/theme/night.css' type='text/css'>");
       }
     }
 
     getStylesheet();
     -->
-  </script><noscript><link href="css/day.css" rel="stylesheet"></noscript>
+  </script><noscript>
+    <link href="css/theme/day.css" rel="stylesheet" type='text/css'></noscript>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -72,7 +74,10 @@
       </div>
       <div class="column right">
         <h1>Simply put,<br> I'm your friend.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia mi vitae volutpat accumsan. Aliquam volutpat nibh tellus, eget ultrices risus elementum sit amet. Vivamus quis venenatis tellus, ut auctor ex. Nulla commodo hendrerit ullamcorper. Pellentesque bibendum ipsum et velit ultrices condimentum. Etiam et convallis est. Sed neque justo, egestas dignissim sapien et, efficitur rutrum lectus. Morbi pretium elit at tortor consequat, quis semper lectus tempor. Aliquam non felis non nunc sagittis aliquet. Etiam vitae enim libero. Cras feugiat non risus ac accumsan. Praesent consequat metus nec faucibus maximus. Proin ac dui dui. Quisque hendrerit quam vitae ex ullamcorper commodo. Cras tristique eget magna et consectetur. Suspendisse potenti.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia mi vitae volutpat accumsan. Aliquam volutpat nibh tellus, eget ultrices risus elementum sit amet. Vivamus quis venenatis tellus, ut auctor ex. Nulla commodo
+          hendrerit ullamcorper. Pellentesque bibendum ipsum et velit ultrices condimentum. Etiam et convallis est. Sed neque justo, egestas dignissim sapien et, efficitur rutrum lectus. Morbi pretium elit at tortor consequat, quis semper lectus
+          tempor. Aliquam non felis non nunc sagittis aliquet. Etiam vitae enim libero. Cras feugiat non risus ac accumsan. Praesent consequat metus nec faucibus maximus. Proin ac dui dui. Quisque hendrerit quam vitae ex ullamcorper commodo. Cras
+          tristique eget magna et consectetur. Suspendisse potenti.</p>
       </div>
     </div>
   </div>
@@ -89,10 +94,10 @@
       }
     });
 
-    window.onpageshow = function (event) {
-        if (event.persisted) {
-            window.location.reload();
-        }
+    window.onpageshow = function(event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
     };
   </script>
 </body>
