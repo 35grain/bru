@@ -86,6 +86,8 @@
   </script>
   <script type="text/javascript">
     $(document).ready(function() {
+      $('body').css('display', 'none');
+      $('body').fadeIn(1500);
       $('.allmighty a').click(function(event) {
         event.preventDefault();
         newLocation = $('.allmighty a').attr("href");
@@ -96,12 +98,6 @@
         window.location = newLocation;
       }
     });
-
-    window.onpageshow = function(event) {
-      if (event.persisted) {
-        window.location.reload();
-      }
-    };
   </script>
 </body>
 

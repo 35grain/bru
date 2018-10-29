@@ -83,23 +83,19 @@
   </div>
   <a href="../" class="back" target="_self"></a>
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('a').click(function(event) {
-        event.preventDefault();
-        newLocation = $('a').attr("href");
-        $('body').fadeOut(250, newpage);
-      });
-
-      function newpage() {
-        window.location = newLocation;
-      }
+  $(document).ready(function() {
+    $('body').css('display', 'none');
+    $('body').fadeIn(1500);
+    $('.allmighty a').click(function(event) {
+      event.preventDefault();
+      newLocation = $('.allmighty a').attr("href");
+      $('body').fadeOut(250, newpage);
     });
 
-    window.onpageshow = function(event) {
-      if (event.persisted) {
-        window.location.reload();
-      }
-    };
+    function newpage() {
+      window.location = newLocation;
+    }
+  });
   </script>
 </body>
 
