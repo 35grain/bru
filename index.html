@@ -97,11 +97,9 @@
       }
     });
 
-    window.onpageshow = function(event) {
-      if (event.persisted) {
-        window.location.reload();
-      }
-    };
+    if (!!window.performance && window.performance.navigation.type === 2) {
+            $('link').attr('stylesheet', function (i, val) { return val; });
+        }
   </script>
 </body>
 
