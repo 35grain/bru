@@ -89,9 +89,9 @@
   $(document).ready(function() {
     $('body').css('display', 'none');
     $('body').fadeIn(750);
-    $('.allmighty a').click(function(event) {
+    $('a.back').click(function(event) {
       event.preventDefault();
-      newLocation = $('.allmighty a').attr("href");
+      newLocation = $('a.back').attr("href");
       $('body').fadeOut(250, newpage);
     });
 
