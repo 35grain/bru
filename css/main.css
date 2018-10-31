@@ -9,6 +9,11 @@ body {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*--------------------
 Welcome title
 --------------------*/
@@ -35,11 +40,6 @@ Nav aka footer
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.allmighty a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .allmighty p {
@@ -202,6 +202,11 @@ a.back:hover::after {
 a.back:hover::before {
 		transform: scale(.8);
 	}
+
+div.socials {
+  font-weight: bold;
+  text-transform: lowercase;
+}
 
 /*--------------------
 Magic fade
