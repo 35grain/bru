@@ -42,11 +42,11 @@ Content page
 }
 
 a.back::before {
-		border-color: #fafafa;
+		border-color: #be9b7b;
 	}
 
 a.back:after {
-		border-color: #fafafa;
+		border-color: #be9b7b;
 	}
 
 a.back:hover::after {
