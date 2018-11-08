@@ -105,7 +105,7 @@
       $('body').fadeIn(750);
       $('.allmighty a').click(function(event) {
         event.preventDefault();
-        newLocation = $('.allmighty a').attr("href");
+        newLocation = this.href;
         $('body').fadeOut(250, newpage);
       });
 
