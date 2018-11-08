@@ -3,6 +3,10 @@ body {
   background-color: #fff4e6;
 }
 
+hr {
+  border-color: #be9b7b;
+}
+
 ::selection {
   background: #854442;
   background: rgba(133, 68, 66, 0.7);

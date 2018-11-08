@@ -2,6 +2,10 @@ body {
   color: #222;
 }
 
+hr {
+  border-color: #222;
+}
+
 ::selection {
   background: #e1483d;
   background: rgba(225, 72, 61, 0.7);
