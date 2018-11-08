@@ -42,6 +42,11 @@ Nav aka footer
   font-weight: bold;
 }
 
+.allmighty a {
+  display: inline-block;
+  padding: 0 2.5px;
+}
+
 .allmighty p {
   margin: 0;
 }
@@ -85,22 +90,27 @@ img.ttl2 {
   opacity: 1;
 }
 
-.allmighty a#wth p span {
-  content: "BRU?";
-}
-
 .allmighty a:hover p span,
 .allmighty a:focus p span,
 .allmighty a:active p span {
   display: none;
 }
 
-.allmighty a#wth:hover p:after,
-.allmighty a#wth:focus p:after,
-.allmighty a#wth:active p:after {
-  text-decoration: line-through;
-  content: 'LEARN MORE';
+.allmighty a#wth p span {
+  content: "/BRU?/";
 }
+
+.allmighty a#cl0ud p span {
+  content: "/CL0UD/";
+}
+
+.allmighty a:hover p:after,
+.allmighty a:focus p:after,
+.allmighty a:active p:after {
+  text-decoration: line-through;
+  content: '/LEARN MORE/';
+}
+
 
 /*--------------------
 Content page

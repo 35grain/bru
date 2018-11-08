@@ -41,7 +41,7 @@ Welcome title
 /*--------------------
 Nav aka footer
 --------------------*/
-img.ttl {
+img#wth {
   filter: invert(100%);
 }
 
