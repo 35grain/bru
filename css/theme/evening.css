@@ -4,7 +4,9 @@ body {
 }
 
 hr {
-  border-color: #c98276;
+  border: 0;
+  height: 1px;
+  color: #c98276;
   background-color: #c98276;
 }
 
