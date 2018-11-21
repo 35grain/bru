@@ -5,6 +5,7 @@ body {
 
 hr {
   border-color: #99aab5;
+  background-color: #99aab5;
 }
 
 ::selection {
