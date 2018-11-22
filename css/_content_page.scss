@@ -1,0 +1,105 @@
+/*--------------------
+Content page
+--------------------*/
+.content-wrapper {
+    position: absolute;
+    left: 0;
+    padding: 7vw;
+  }
+  
+  img.pg {
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+  }
+  
+  img.profile {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+  }
+  
+  .column {
+    float: left;
+    padding: 10px 2%;
+    box-sizing: border-box;
+    font-size: 1vw;
+  }
+  
+  .left {
+    width: 17%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .right {
+    width: 83%;
+    text-align: justify;
+  }
+  
+  .row {
+    padding: 2vw;
+    box-sizing: border-box;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content-wrapper h1 {
+    font-family: adobe-garamond-pro;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a.back {
+      width: 3vmin;
+      height: 3vmin;
+      box-sizing: border-box;
+      position: fixed;
+      left: 20px;
+      top: 25px;
+      transform: rotate(-135deg);
+  }
+  
+  a.back::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          border-width: .8vmin .8vmin 0 0;
+          border-style: solid;
+          transition: .2s ease;
+          display: block;
+          transform-origin: 100% 0;
+      }
+  
+  a.back:after {
+          content: '';
+          float: left;
+          position: relative;
+          top: -100%;
+          width: 100%;
+          height: 100%;
+          border-width: 0 .8vmin 0 0;
+          border-style: solid;
+          transform-origin: 100% 0;
+          transition:.2s ease;
+      }
+  
+  a.back:hover::after {
+          transform: rotate(45deg);
+          height: 120%;
+      }
+  
+  a.back:hover::before {
+          transform: scale(.8);
+      }
+  
+  div.socials {
+    font-weight: bold;
+    text-transform: lowercase;
+  }

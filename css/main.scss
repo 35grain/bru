@@ -1,0 +1,19 @@
+body {
+  cursor: default;
+  -webkit-user-select: text;
+  -webkit-touch-callout: text;
+  font-family: Lato;
+  font-size: 14px;
+  font-size: 0.73vw;
+  margin: 0;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@import 'front_page';
+@import 'content_page';
+@import 'fade';
+@import 'responsiveness';

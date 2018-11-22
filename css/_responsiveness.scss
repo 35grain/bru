@@ -1,0 +1,112 @@
+/*--------------------
+Responsiveness
+--------------------*/
+@media only screen and (max-width: 1400px) {
+    body {
+      font-size: 12px;
+      font-size: 1vw;
+    }
+  
+    .title {
+      font-size: 7vw;
+    }
+  
+    .column {
+      font-size: 1.4vw;
+    }
+  
+    .content-wrapper h1 {
+      font-size: 2.7vw;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    body {
+      font-size: 1.5vw;
+    }
+  
+    .title {
+      font-size: 7.5vw;
+    }
+  
+    .column {
+      font-size: 1.8vw;
+    }
+  
+    .content-wrapper h1 {
+      font-size: 3.2vw;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    body {
+      font-size: 2vw;
+    }
+  
+    .title {
+      font-size: 8vw;
+    }
+  
+    .column {
+      font-size: 2.2vw;
+      float: none;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+    }
+  
+    img.pg {
+      display: none;
+    }
+  
+    img.profile {
+      width: 50%;
+    }
+  
+    .content-wrapper h1 {
+      font-size: 3.7vw;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    body {
+      font-size: 2.5vw;
+    }
+  
+    .title {
+      font-size: 9vw;
+    }
+  
+    .column {
+      font-size: 3vw;
+    }
+  
+    img.profile {
+      width: 60%;
+    }
+  
+    .content-wrapper h1 {
+      font-size: 5vw;
+    }
+  }
+  
+  @media only screen and (max-width: 420px) {
+    body {
+      font-size: 3.5vw;
+    }
+  
+    .title {
+      font-size: 10.5vw;
+    }
+  
+    .column {
+      font-size: 4vw;
+    }
+  
+    .content-wrapper h1 {
+      font-size: 6vw;
+    }
+  }
+  

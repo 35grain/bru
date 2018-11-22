@@ -1,0 +1,96 @@
+/*--------------------
+Welcome title
+--------------------*/
+.title {
+    font-family: adobe-garamond-pro;
+    font-size: 120px;
+    font-size: 6.25vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    opacity: 1;
+  }
+  
+  /*--------------------
+  Nav aka footer
+  --------------------*/
+  .allmighty {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .allmighty a {
+    display: inline-block;
+    padding: 0 2.5px;
+  }
+  
+  .allmighty p {
+    margin: 0;
+  }
+  
+  noscript {
+    position: absolute;
+    opacity: 0;
+    color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  img.ttl {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  img.ttl2 {
+    opacity: 1;
+  }
+  
+  .allmighty:hover~.title,
+  .allmighty:focus~.title {
+    opacity: 0;
+  }
+  
+  .allmighty:hover~noscript,
+  .allmighty:focus~noscript,
+  .allmighty:active~noscript {
+    opacity: 1;
+  }
+  
+  .allmighty a:hover p span,
+  .allmighty a:focus p span,
+  .allmighty a:active p span {
+    display: none;
+  }
+  
+  .allmighty a#wth p span {
+    content: "/BRU?/";
+  }
+  
+  .allmighty a#cl0ud p span {
+    content: "/CL0UD/";
+  }
+  
+  .allmighty a:hover p:after,
+  .allmighty a:focus p:after,
+  .allmighty a:active p:after {
+    text-decoration: line-through;
+    content: '/LEARN MORE/';
+  }
