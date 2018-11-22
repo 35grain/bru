@@ -288,8 +288,7 @@ Responsiveness
     font-size: 2.2vw;
     float: none;
   }
-  .left,
-  .right {
+  .column.left, .column.right {
     width: 100%;
   }
   img.pg {
