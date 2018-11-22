@@ -109,9 +109,9 @@ img.ttl2 {
   content: "/CL0UD/";
 }
 
-.allmighty a:hover p:after,
-.allmighty a:focus p:after,
-.allmighty a:active p:after {
+.allmighty a:hover p::after,
+.allmighty a:focus p::after,
+.allmighty a:active p::after {
   text-decoration: line-through;
   content: '/LEARN MORE/';
 }
@@ -148,13 +148,13 @@ img.profile {
   font-size: 1vw;
 }
 
-.left {
+.column.left {
   width: 17%;
   text-align: center;
   text-transform: uppercase;
 }
 
-.right {
+.column.right {
   width: 83%;
   text-align: justify;
 }
@@ -203,7 +203,7 @@ a.back::before {
           transform-origin: 100% 0;
 }
 
-a.back:after {
+a.back::after {
   content: '';
   float: left;
   position: relative;
