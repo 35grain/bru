@@ -1,11 +1,12 @@
+/*--------------------
+General stuff
+--------------------*/
 body {
   color: #c98276;
   background-color: #eec1ad;
 }
 
 hr {
-  border: 0;
-  height: 1px;
   color: #c98276;
   background-color: #c98276;
 }
@@ -20,18 +21,12 @@ hr {
   background: rgba(227, 93, 106, 0.7);
 }
 
-::-webkit-scrollbar {
-    width: 4px;
-}
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
 ::-webkit-scrollbar-thumb {
-    background-color: #e35d6a;
-    border-radius: 2px;
+  background-color: #e35d6a;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #e35d7b;
+  background-color: #d45671;
 }
 
 /*--------------------
@@ -49,17 +44,17 @@ Content page
 }
 
 a.back::before {
-		border-color: #fafafa;
-	}
+  border-color: #fafafa;
+}
 
 a.back:after {
-		border-color: #fafafa;
-	}
+  border-color: #fafafa;
+}
 
 a.back:hover::after {
-		border-color: #e35d6a;
-	}
+  border-color: #e35d6a;
+}
 
 a.back:hover::before {
-		border-color: #e35d6a;
-	}
+  border-color: #e35d6a;
+}

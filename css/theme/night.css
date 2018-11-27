@@ -1,11 +1,12 @@
+/*--------------------
+General stuff
+--------------------*/
 body {
   color: #99aab5;
   background-color: #23272a;
 }
 
 hr {
-  border: 0;
-  height: 1px;
   color: #99aab5;
   background-color: #99aab5;
 }
@@ -20,18 +21,12 @@ hr {
   background: rgba(114, 137, 218, 0.7);
 }
 
-::-webkit-scrollbar {
-    width: 4px;
-}
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
 ::-webkit-scrollbar-thumb {
-    background-color: #7289da;
-    border-radius: 2px;
+  background-color: #7289da;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #7289cb;
+  background-color: #5777cf;
 }
 
 /*--------------------
@@ -42,35 +37,29 @@ Welcome title
 }
 
 /*--------------------
-Nav aka footer
---------------------*/
-img#wth {
-  filter: invert(100%);
-}
-
-/*--------------------
 Content page
 --------------------*/
 .content-wrapper h1 {
   color: #7289da;
 }
 
-img.pg {
+img.invert-color {
+  /* Also for front-page */
   filter: invert(100%);
 }
 
 a.back::before {
-		border-color: #fafafa;
-	}
+  border-color: #fafafa;
+}
 
 a.back:after {
-		border-color: #fafafa;
-	}
+  border-color: #fafafa;
+}
 
 a.back:hover::after {
-		border-color: #7289da;
-	}
+  border-color: #7289da;
+}
 
 a.back:hover::before {
-		border-color: #7289da;
-	}
+  border-color: #7289da;
+}

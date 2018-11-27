@@ -1,0 +1,56 @@
+/*--------------------
+Welcome title
+--------------------*/
+@function get-vw($target) {
+  $vw-context: (1920 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+.title { /* Also for 404 page */
+  font-family: adobe-garamond-pro;
+  font-size: 120px;
+  font-size: get-vw(120px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+  opacity: 1;
+
+  p {
+    font-size: 45px;
+    font-size: get-vw(45px);
+    margin: 0;
+  }
+}
+
+/*--------------------
+  Nav aka footer
+--------------------*/
+.allmighty {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.allmighty ul {
+  margin: 0;
+  padding: 0;
+}
+
+.allmighty li {
+  display: inline-block;
+  padding: 0 2.5px;
+}
+
+.allmighty li a span::before,
+.allmighty li a span::after {
+  content: "/";
+}
