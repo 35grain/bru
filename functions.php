@@ -300,8 +300,7 @@ function insert_custom_title() {
         echo "</title>";
     }
     else :
-		echo "<title>Page Not Found | ";
-		echo bloginfo('name');
+		echo "<title>you're lost, bru.";
 		echo "</title>";
 	endif;
 	rewind_posts();
