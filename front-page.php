@@ -7,7 +7,10 @@ wp_nav_menu( array(
     'link_before' => '<span onmouseover="onHover(this)" onmouseout="onMouseOut(this)">',
     'link_after'=>'</span>' ) ); 
 ?>
-  <strong class="title"><?php the_field('title_message'); ?></strong>
+<div class="title">
+  <strong><?php the_field('title_message'); ?></strong>
+  <p><?php the_field('subtitle'); ?></p>
+</div>
   <script>
   var oldValue;
   function onHover(x) {
