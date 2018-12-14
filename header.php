@@ -29,7 +29,7 @@
         document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/night.css' ?>' type='text/css'><meta name='theme-color' content='#23272a'>");
       }
       if (6 <= currentTime && currentTime < 11) {
-        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/morning.css' ?>' type='text/css'><<meta name='theme-color' content='#fff4e6'>");
+        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/morning.css' ?>' type='text/css'><meta name='theme-color' content='#fff4e6'>");
       }
       if (11 <= currentTime && currentTime < 16) {
         document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/day.css' ?>' type='text/css'><meta name='theme-color' content='#ffffff'>");
