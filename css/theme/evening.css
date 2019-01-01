@@ -44,11 +44,11 @@ Content page
 }
 
 a.back::before {
-  border-color: #fafafa;
+  border-color: #c98276;
 }
 
 a.back:after {
-  border-color: #fafafa;
+  border-color: #c98276;
 }
 
 a.back:hover::after {
