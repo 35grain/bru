@@ -49,11 +49,11 @@ img.invert-color {
 }
 
 a.back::before {
-  border-color: #fafafa;
+  border-color: #99aab5;
 }
 
 a.back:after {
-  border-color: #fafafa;
+  border-color: #99aab5;
 }
 
 a.back:hover::after {
