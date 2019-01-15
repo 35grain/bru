@@ -2,11 +2,15 @@ $(document).ready(function () {
     $('body').fadeIn(750);
     $(document).click(function (event) {
         event.preventDefault();
-        newLocation = $(event.target).closest('a').attr("href");
+        newLocation = $(event.target).closest('a').attr('href');
         if (newLocation != undefined) {
             if ($(event.target).closest('a').attr('target') == '_blank') {
                 window.open(newLocation);
-            } else {
+            }
+			else if (newLocation.startsWith('mailto:')) {
+				newpage();
+			}
+			else {
                 $('body').fadeOut(250, newpage);
             }
         }
