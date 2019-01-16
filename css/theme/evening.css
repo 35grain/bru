@@ -11,6 +11,10 @@ hr {
   background-color: #c98276;
 }
 
+a:hover {
+  color: #d89b90;
+}
+
 ::selection {
   background: #e35d6a;
   background: rgba(227, 93, 106, 0.7);
