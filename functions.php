@@ -89,7 +89,7 @@ if( function_exists('acf_add_local_field_group') ):
 				'key' => 'field_5c3f53f99ccbd',
 				'label' => 'Back arrow link',
 				'name' => 'back_arrow_link',
-				'type' => 'url',
+				'type' => 'text',
 				'instructions' => '',
 				'required' => 1,
 				'conditional_logic' => 0,
@@ -100,6 +100,9 @@ if( function_exists('acf_add_local_field_group') ):
 				),
 				'default_value' => '../',
 				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
 			),
 		),
 		'location' => array(
