@@ -8,7 +8,7 @@ wp_nav_menu( array(
     'link_after'=>'</span>' ) ); 
 ?>
 <div class="title">
-  <strong><?php the_field('title_message'); ?></strong>
+  <h1><?php the_field('title_message'); ?></h1>
   <p><?php the_field('subtitle'); ?></p>
 </div>
   <script>
