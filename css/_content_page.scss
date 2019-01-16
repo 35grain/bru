@@ -29,13 +29,12 @@ img.profile {
   font-size: 1vw;
 
   &.left {
-    flex-basis: 17%;
+    flex-basis: 50%;
     text-align: center;
     text-transform: uppercase;
   }
 
   &.right {
-    flex-basis: 83%;
     text-align: justify;
   }
 }
