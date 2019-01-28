@@ -16,5 +16,5 @@
       </div>
     </div>
   </div>
-  <a href="<?php the_field('back_arrow_link'); ?>" class="back" target="_self"></a>
+  <a href="<?php the_field('back_arrow_link'); ?>" class="back" target="_self" title="Go back"></a>
 <?php get_footer(); ?>

@@ -34,15 +34,6 @@ a {
     border-radius: 2px;
   }
 
-/*--------------------
-Magic fade
---------------------*/
-.fade {
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
-}
-
 @import 'f-page';
 @import 'content_page';
 @import 'back_arrow';
