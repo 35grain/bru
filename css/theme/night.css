@@ -18,11 +18,13 @@ a:hover {
 ::selection {
   background: #7289da;
   background: rgba(114, 137, 218, 0.7);
+  color: #5968a0;
 }
 
 ::-moz-selection {
   background: #7289da;
   background: rgba(114, 137, 218, 0.7);
+  color: #5968a0;
 }
 
 ::-webkit-scrollbar-thumb {
