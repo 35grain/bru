@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('container').fadeIn(750);
+    $('.container').fadeIn(750);
     $(document).click(function (event) {
         event.preventDefault();
         newLocation = $(event.target).closest('a').attr('href');
@@ -11,7 +11,7 @@ $(document).ready(function () {
 				newpage();
 			}
 			else {
-                $('container').fadeOut(250, newpage);
+                $('.container').fadeOut(250, newpage);
             }
         }
     });
