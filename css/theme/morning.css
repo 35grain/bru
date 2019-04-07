@@ -2,8 +2,11 @@
 General stuff
 --------------------*/
 body {
-  color: #be9b7b;
   background-color: #fcead2;
+}
+
+.container {
+  color: #be9b7b;
 }
 
 hr {
