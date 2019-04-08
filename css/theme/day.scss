@@ -10,14 +10,12 @@ $niceLightColor: #e0e0e0;
 /*--------------------
 General stuff
 --------------------*/
-body {
+.container {
   background-color: #EEEEEE;
   background: linear-gradient(230deg, #7bb9c7, #EEEEEE, #fff2d2);
   background-size: 600% 600%;
-}
-
-.container {
   color: $darkColor;
+  height: 100%;
 }
 
 hr {
