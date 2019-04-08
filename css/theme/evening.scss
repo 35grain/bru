@@ -10,12 +10,14 @@ $darkerBeige: darken($smoothBeige, 20%);
 /*--------------------
 General stuff
 --------------------*/
-.container {
+body {
   background-color: #f5e3ca;
   background: linear-gradient(270deg, #ceb2b4, #FBBFCA, #f5e3ca);
   background-size: 600% 600%;
+}
+
+.container {
   color: $smoothBeige;
-  height: 100%;
 }
 
 hr {

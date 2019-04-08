@@ -10,12 +10,14 @@ $lessBlueDarker: darken($lessBlue, 50%);
 /*--------------------
 General stuff
 --------------------*/
-.container {
+body {
   background-color: #23272a;
 	background: linear-gradient(317deg, #376996, #1F487E, #23272a);
   background-size: 600% 600%;
+}
+
+.container {
   color: $lessBlue;
-  height: 100%;
 }
 
 hr {
