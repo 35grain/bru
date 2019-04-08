@@ -26,19 +26,19 @@
     function getStylesheet() {
       var currentTime = new Date().getHours();
       if (0 <= currentTime && currentTime < 6) {
-        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/night.min.css' ?>' type='text/css'><meta name='theme-color' content='#23272a'>");
+        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/night.min.css' ?>' type='text/css'><meta name='theme-color' content='#1F487E'>");
       }
       if (6 <= currentTime && currentTime < 11) {
-        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/morning.min.css' ?>' type='text/css'><meta name='theme-color' content='#fcead2'>");
+        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/morning.min.css' ?>' type='text/css'><meta name='theme-color' content='#E3A587'>");
       }
       if (11 <= currentTime && currentTime < 16) {
-        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/day.min.css' ?>' type='text/css'><meta name='theme-color' content='#ffffff'>");
+        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/day.min.css' ?>' type='text/css'><meta name='theme-color' content='#EEEEEE'>");
       }
       if (16 <= currentTime && currentTime < 21) {
-        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/evening.min.css' ?>' type='text/css'><meta name='theme-color' content='#eec1ad'>");
+        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/evening.min.css' ?>' type='text/css'><meta name='theme-color' content='#FBBFCA'>");
       }
       if (21 <= currentTime && currentTime <= 24) {
-        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/night.min.css' ?>' type='text/css'><meta name='theme-color' content='#23272a'>");
+        document.write("<link rel='stylesheet' href='<?php echo get_template_directory_uri() . '/css/theme/night.min.css' ?>' type='text/css'><meta name='theme-color' content='#1F487E'>");
       }
     }
 
