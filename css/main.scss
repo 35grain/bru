@@ -1,6 +1,7 @@
 /*--------------------
 General stuff
 --------------------*/
+html,
 body {
     cursor: default;
     -webkit-user-select: text;
@@ -9,6 +10,14 @@ body {
     font-size: 14px;
     font-size: 0.73vw;
     margin: 0;
+    height: 100%;
+}
+
+body {
+  -webkit-animation: BackgroundAnimation 25s ease infinite;
+  -moz-animation: BackgroundAnimation 25s ease infinite;
+  -o-animation: BackgroundAnimation 25s ease infinite;
+  animation: BackgroundAnimation 25s ease infinite;
 }
 
 .container {
@@ -36,6 +45,65 @@ a {
   ::-webkit-scrollbar-thumb {
     border-radius: 2px;
   }
+
+/*--------------------
+Background animation
+--------------------*/
+@-webkit-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 2%
+  }
+
+  50% {
+    background-position: 100% 99%
+  }
+
+  100% {
+    background-position: 0% 2%
+  }
+}
+
+@-moz-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 2%
+  }
+
+  50% {
+    background-position: 100% 99%
+  }
+
+  100% {
+    background-position: 0% 2%
+  }
+}
+
+@-o-keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 2%
+  }
+
+  50% {
+    background-position: 100% 99%
+  }
+
+  100% {
+    background-position: 0% 2%
+  }
+}
+
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 2%
+  }
+
+  50% {
+    background-position: 100% 99%
+  }
+
+  100% {
+    background-position: 0% 2%
+  }
+}
 
 @import 'f-page';
 @import 'content_page';

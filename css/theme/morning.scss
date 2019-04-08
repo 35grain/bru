@@ -1,0 +1,80 @@
+/*--------------------
+Colors
+--------------------*/
+$smoothMaroon: #996361;
+$smoothMaroonRGBA: rgba($smoothMaroon, 0.7);
+$lessMaroon: #a37574;
+$lighterLessMaroon: lighten($lessMaroon, 20%);
+$darkerLessMaroon: darken($lessMaroon, 10%);
+
+/*--------------------
+General stuff
+--------------------*/
+body {
+  background-color: #fcead2;
+  background: linear-gradient(230deg, #A57F60, #E3A587, #DB5A42);
+  background-size: 600% 600%;
+}
+
+.container {
+  color: $lessMaroon;
+}
+
+hr {
+  color: $lessMaroon;
+  background-color: $lessMaroon;
+}
+
+a:hover {
+  color: $darkerLessMaroon;
+}
+
+::selection {
+  background: $smoothMaroon;
+  background: $smoothMaroonRGBA;
+  color: $lighterLessMaroon;
+}
+
+::-moz-selection {
+  background: $smoothMaroon;
+  background: $smoothMaroonRGBA;
+  color: $lighterLessMaroon;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $smoothMaroon;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $lessMaroon;
+}
+
+/*--------------------
+Welcome title
+--------------------*/
+.title {
+  color: $smoothMaroon;
+}
+
+/*--------------------
+Content page
+--------------------*/
+.content-wrapper h1 {
+  color: $smoothMaroon;
+}
+
+a.back::before {
+  border-color: $lessMaroon;
+}
+
+a.back:after {
+  border-color: $lessMaroon;
+}
+
+a.back:hover::after {
+  border-color: $smoothMaroon;
+}
+
+a.back:hover::before {
+  border-color: $smoothMaroon;
+}

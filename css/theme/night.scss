@@ -1,0 +1,84 @@
+/*--------------------
+Colors
+--------------------*/
+$smoothBlue: #829CBC;
+$smoothBlueRGBA: rgba($smoothBlue, 0.7);
+$lessBlue: #8596ab;
+$lessBlueLighter: lighten($lessBlue, 10%);
+$lessBlueDarker: darken($lessBlue, 50%);
+
+/*--------------------
+General stuff
+--------------------*/
+body {
+  background-color: #23272a;
+	background: linear-gradient(317deg, #376996, #1F487E, #23272a);
+  background-size: 600% 600%;
+}
+
+.container {
+  color: $lessBlue;
+}
+
+hr {
+  color: $lessBlue;
+  background-color: $lessBlue;
+}
+
+a:hover {
+  color: $lessBlueLighter;
+}
+
+::selection {
+  background: $smoothBlue;
+  background: $smoothBlueRGBA;
+  color: $lessBlueDarker;
+}
+
+::-moz-selection {
+  background: $smoothBlue;
+  background: $smoothBlueRGBA;
+  color: $lessBlueDarker;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $smoothBlue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $lessBlue;
+}
+
+/*--------------------
+Welcome title
+--------------------*/
+.title {
+  color: $smoothBlue;
+}
+
+/*--------------------
+Content page
+--------------------*/
+.content-wrapper h1 {
+  color: $smoothBlue;
+}
+
+img.invert-color {
+  filter: invert(100%);
+}
+
+a.back::before {
+  border-color: $lessBlue;
+}
+
+a.back:after {
+  border-color: $lessBlue;
+}
+
+a.back:hover::after {
+  border-color: $smoothBlue;
+}
+
+a.back:hover::before {
+  border-color: $smoothBlue;
+}

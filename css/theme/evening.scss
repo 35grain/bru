@@ -1,0 +1,80 @@
+/*--------------------
+Colors
+--------------------*/
+$smoothBeige: #8c807a;
+$smoothBeigeRGBA: rgba($smoothBeige, 0.7);
+$lightBeige: lighten($smoothBeige, 10%);
+$lighterBeige: lighten($smoothBeige, 40%);
+$darkerBeige: darken($smoothBeige, 20%);
+
+/*--------------------
+General stuff
+--------------------*/
+body {
+  background-color: #f5e3ca;
+  background: linear-gradient(270deg, #ceb2b4, #FBBFCA, #f5e3ca);
+  background-size: 600% 600%;
+}
+
+.container {
+  color: $smoothBeige;
+}
+
+hr {
+  color: $smoothBeige;
+  background-color: $smoothBeige;
+}
+
+a:hover {
+  color: $lightBeige;
+}
+
+::selection {
+  background: $smoothBeige;
+  background: $smoothBeigeRGBA;
+  color: $lighterBeige;
+}
+
+::-moz-selection {
+  background: $smoothBeige;
+  background: $smoothBeigeRGBA;
+  color: $lighterBeige;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $smoothBeige;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $darkerBeige;
+}
+
+/*--------------------
+Welcome title
+--------------------*/
+.title {
+  color: $smoothBeige;
+}
+
+/*--------------------
+Content page
+--------------------*/
+.content-wrapper h1 {
+  color: $smoothBeige;
+}
+
+a.back::before {
+  border-color: $smoothBeige;
+}
+
+a.back:after {
+  border-color: $smoothBeige;
+}
+
+a.back:hover::after {
+  border-color: $smoothBeige;
+}
+
+a.back:hover::before {
+  border-color: $smoothBeige;
+}

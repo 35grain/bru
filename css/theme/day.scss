@@ -1,0 +1,80 @@
+/*--------------------
+Colors
+--------------------*/
+$poppingRed: #e35d6a;
+$poppingRedRGBA: rgba($poppingRed, 0.7);
+$darkColor: #222;
+$lighterDarkColor: lighten($darkColor, 20%);
+$niceLightColor: #e0e0e0;
+
+/*--------------------
+General stuff
+--------------------*/
+body {
+  background-color: #EEEEEE;
+  background: linear-gradient(230deg, #7bb9c7, #EEEEEE, #fff2d2);
+  background-size: 600% 600%;
+}
+
+.container {
+  color: $darkColor;
+}
+
+hr {
+  color: $darkColor;
+  background-color: $darkColor;
+}
+
+a:hover {
+  color: $lighterDarkColor;
+}
+
+::selection {
+  background: $poppingRed;
+  background: $poppingRedRGBA;
+  color: $niceLightColor;
+}
+
+::-moz-selection {
+  background: $poppingRed;
+  background: $poppingRedRGBA;
+  color: $niceLightColor;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $poppingRed;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c54046;
+}
+
+/*--------------------
+Welcome title
+--------------------*/
+.title {
+  color: $poppingRed;
+}
+
+/*--------------------
+Content page
+--------------------*/
+.content-wrapper h1 {
+  color: $poppingRed;
+}
+
+a.back::before {
+  border-color: $darkColor;
+}
+
+a.back:after {
+  border-color: $darkColor;
+}
+
+a.back:hover::after {
+  border-color: $poppingRed;
+}
+
+a.back:hover::before {
+  border-color: $poppingRed;
+}
