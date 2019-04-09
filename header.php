@@ -19,7 +19,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <link rel="stylesheet" href="https://use.typekit.net/cdj4qgy.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 
   <script>
