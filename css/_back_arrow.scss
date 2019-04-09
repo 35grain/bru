@@ -2,58 +2,58 @@
 Back arrow
 --------------------*/
 a.back {
-    width: 3vmin;
-    height: 3vmin;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: fixed;
-    left: 20px;
-    top: 25px;
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-  
-    &::before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      border-width: .8vmin .8vmin 0 0;
-      border-style: solid;
-      -webkit-transition: .2s ease;
-      transition: .2s ease;
-      display: block;
-      -webkit-transform-origin: 100% 0;
-      transform-origin: 100% 0;
-    }
-  
-    &::after {
-      content: '';
-      float: left;
-      position: relative;
-      top: -100%;
-      width: 100%;
-      height: 100%;
-      border-width: 0 .8vmin 0 0;
-      border-style: solid;
-      -webkit-transform-origin: 100% 0;
-      transform-origin: 100% 0;
-      -webkit-transition: .2s ease;
-      transition: .2s ease;
-    }
+  width: 3vmin;
+  height: 3vmin;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  left: 20px;
+  top: 25px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: .8vmin .8vmin 0 0;
+    border-style: solid;
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
+    display: block;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
   }
-  
-  .customize-support a.back {
-    top: 25 + 32px;
+
+  &::after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 .8vmin 0 0;
+    border-style: solid;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
   }
-  
-  a.back:hover {
-    &::after {
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-      height: 120%;
-    }
-  
-    &::before {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
-    }
+}
+
+.customize-support a.back {
+  top: 25 + 32px;
+}
+
+a.back:hover {
+  &::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 120%;
   }
+
+  &::before {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}

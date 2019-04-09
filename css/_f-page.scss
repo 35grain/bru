@@ -6,7 +6,8 @@ Welcome title
   @return ($target / $vw-context) * 1vw;
 }
 
-.title { /* Also for 404 page */
+.title {
+  /* Also for 404 page */
   font-family: adobe-garamond-pro;
   font-size: 120px;
   font-size: get-vw(120px);
@@ -21,7 +22,7 @@ Welcome title
   h1 {
     font-size: inherit;
   }
-  
+
   p {
     font-size: 45px;
     font-size: get-vw(45px);
